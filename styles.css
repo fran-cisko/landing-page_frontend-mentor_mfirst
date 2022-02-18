@@ -31,12 +31,13 @@
 
   --body-font: 'Open Sans', sans-serif;
   --spotlight-font: 'Raleway', sans-serif;   /* Headings, Call-to-actions, Header Navigation */
+  --p-line-height:1.5rem;/*description especifications*/
   --biggest-font-size: 2.5rem;
-  --h1-font-size: 1.5rem;
+  --h1-font-size: 1.4rem;
   --h2-font-size: 1.25rem;
   --h3-font-size: 1rem;
   --normal-font-size: .875rem; /*body copy 14px according to designer's request 
-
+  
   --small-font-size: .813rem;
   --smaller-font-size: .75rem;
 
@@ -94,6 +95,17 @@ h1, h2, h3 {
   color: var(--white);
   font-weight: var(--font-bold);
   font-family: var( --spotlight-font);
+  /*margin:0; sino el navegador me toma el margen de normalize.css*/
+}
+h1{
+  font-size: var(--h1-font-size);
+  line-height: 2rem;
+}
+h2{
+  --h2-font-size: 1.75rem;
+}
+h3{
+  --h3-font-size: 1.25rem;
 }
 
 ul {
@@ -107,11 +119,11 @@ a {
   text-decoration: none;
 }
 
-img,
+/* img,
 video {
   max-width: 100%;
   height: auto;
-}
+} */
 
 button,
 input {
@@ -134,7 +146,7 @@ input {
 
 /*=============== REUSABLE CSS CLASSES ===============*/
 .section {
-  padding: 4.5rem 0 2.5rem;
+  padding: 2rem 0;
 }
 
 .section__title {
@@ -145,38 +157,90 @@ input {
   margin-bottom: var(--mb-2);
 }
 
-.container {
-  max-width: 968px;
-  margin-left: 1rem;
-  margin-right: 1rem;
+
+.container{
+  max-width: 80rem;
+  padding: 0 2rem; 
+  /* padding-inline: 2rem;   */
+  /* margin:0 auto;or width: 90% */
+  margin-inline: auto;
+  overflow: hidden;
 }
-/* --padding-container: 60px 0; */
+
 .grid {
   display: grid;
-  gap: 1.5rem;
+  gap:var(--gap, 1.5rem);
+}
+.flex{
+display: flex;
+gap: var(--gap, 1rem);
+}
 
+.btn-cta{ 
+  text-decoration:none;
+  padding: 0.75rem 0.75rem;
+  width: 15rem;
+  background: var(--gradient);
+  border-radius: 1rem;
+  color:var(--white);
+  place-self:center;
 }
 
 /*===== Nav ======*/
+.header{
+background-color: var(--bg-intro-email-singup);
+width: 100%;
+height: 3.5rem;
+}
+
 .nav{
+  height: 100%;
   display:flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--bg-main);
-  padding: 1rem .5rem 0 .5rem;
-  
+  padding: 1rem 0 0 0;
+
 }
 
 .nav__list{
   display: flex;
   flex-direction: row;
-  gap:.5rem;
+  column-gap:.5rem;
   
 }
 .nav__items{
   font-weight: var(--font-light);
 }
 
-.nav__logo{
+/* .nav__logo{
   width: 90px;
+} */
+.nav__svg{
+/* max-width: 100%; */
+width:90px;
 }
+
+.home__container{
+  /* height: calc(100vh); */
+  display: grid;
+  gap:1.25rem;
+  text-align: center;
+}
+.home *{
+  outline: 1px solid wheat;
+}
+.home__figure{
+height: auto;
+}
+.home__img{
+margin:auto;
+/* display:block; */
+width:100%;
+object-fit: cover;
+max-width:40rem;
+
+}
+.home__description{
+line-height: var(--p-line-height);
+}
+
