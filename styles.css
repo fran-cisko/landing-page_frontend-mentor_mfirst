@@ -14,7 +14,7 @@
  /*== Primary,  Dark blue background ==*/
     --bg-intro-email-singup:  hsl(217, 28%, 15%);
     --bg-main:hsl(217, 28%, 15%);
-    /*hsl(218, 28%, 13%);*/
+    --bg-wave: hsl(218, 28%, 13%);
     --bg-footer:hsl(216, 53%, 9%);
     --bg-testimonials: hsl(219, 30%, 18%);
   /*== Acent ==*/
@@ -227,16 +227,11 @@ width:90px;
   display: grid;
   gap:1.25rem;
   text-align: center;
-  
 }
 .home__container *{
   outline: 1px solid wheat;
 }
-.home__figure{
-/* height: auto;*/
-/* position:relative; */
 
-}
 .home__img{
 margin:auto;
 /* display:block; */
@@ -247,18 +242,20 @@ max-width:40rem;
 
 .home__wave{
   position:absolute;
-  top:55%;
-  left:0;
-  /* z-index: -1; */
-  width:80%;
-  height:100%;
+  top:35%;
+  left:-10%;
+  z-index: -1;
+  width:110%;
+  height:20%;
   background:url("./images/bg-curvy-mobile.svg");
   background-repeat: no-repeat;
   outline: 1px solid rgb(223, 128, 207);
-  background-size: 100% 200px;
+  background-size:110% 100%;
+  box-shadow: 0 150px 0px hsl(218, 28%, 13%),  0 300px 0px hsl(218, 28%, 13%);
+  /* color wave original #181F2B */
 }
 
-.home__description{
+.description{
 line-height: var(--p-line-height);
 }
 
