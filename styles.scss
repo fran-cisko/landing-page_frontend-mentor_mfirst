@@ -187,6 +187,23 @@ gap: var(--gap, 1rem);
   place-self:center;
 }
 
+.section {
+    padding: 2rem 0;
+  
+      &__title {
+      font-size: var(--h2-font-size);
+      color: var(--title-color);
+      text-align: center;
+      text-transform: capitalize;
+      margin-bottom: var(--mb-2);
+      }
+  }
+  
+.description{
+    line-height: var(--p-line-height);
+    }
+    
+
 /*===== Nav ======*/
 .header{
 background-color: var(--bg-intro-email-singup);
@@ -250,55 +267,26 @@ height: 3.5rem;
     background-repeat: no-repeat;
     outline: 1px solid rgb(223, 128, 207);
     background-size:110% 100%;
-    box-shadow: 0 150px 0px hsl(218, 28%, 13%),  0 300px 0px hsl(218, 28%, 13%);
+    box-shadow: 0 150px 30px 25px hsl(218, 28%, 13%);
     /* color wave original #181F2B */
     }
 }
 
-.description{
-line-height: var(--p-line-height);
-}
 
-
-
-// ==================bem helper===============
 .about {
-  &__container {
-  }
+    display:grid;
+    gap: 1rem;
+    text-align: center;
+    padding-top: 5rem;
+    & *{
+        outline: 1px solid rgb(61, 204, 61);
+    }
   &__figure {
+      padding-bottom: 1rem;
   }
   &__img {
+      width: 5rem;
+      height: 5rem;
+      object-fit:contain;
   }
-}
-.attribution {
-}
-.btn-cta {
-}
-.container {
-}
-.description {
-}
-.header {
-}
-.home {
-  &__container {
-  }
-  &__img {
-  }
-  &__wave {
-  }
-}
-.nav {
-  &__items {
-  }
-  &__list {
-  }
-  &__logo {
-  }
-  &__menu {
-  }
-  &__svg {
-  }
-}
-.section {
 }

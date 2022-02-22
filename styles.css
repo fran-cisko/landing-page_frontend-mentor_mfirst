@@ -181,6 +181,21 @@ input {
   place-self: center;
 }
 
+.section {
+  padding: 2rem 0;
+}
+.section__title {
+  font-size: var(--h2-font-size);
+  color: var(--title-color);
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: var(--mb-2);
+}
+
+.description {
+  line-height: var(--p-line-height);
+}
+
 /*===== Nav ======*/
 .header {
   background-color: var(--bg-intro-email-singup);
@@ -238,12 +253,26 @@ input {
   background-repeat: no-repeat;
   outline: 1px solid #df80cf;
   background-size: 110% 100%;
-  box-shadow: 0 150px 0px #181f2a, 0 300px 0px #181f2a;
+  box-shadow: 0 150px 30px 25px #181f2a;
   /* color wave original #181F2B */
 }
 
-.description {
-  line-height: var(--p-line-height);
+.about {
+  display: grid;
+  gap: 1rem;
+  text-align: center;
+  padding-top: 5rem;
+}
+.about * {
+  outline: 1px solid #3dcc3d;
+}
+.about__figure {
+  padding-bottom: 1rem;
+}
+.about__img {
+  width: 5rem;
+  height: 5rem;
+  object-fit: contain;
 }
 
 /*# sourceMappingURL=styles.css.map */
