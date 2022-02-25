@@ -248,16 +248,24 @@ input {
   text-align: center;
   padding-top: 4rem;
 }
-
+.about__figure {
+  padding-bottom: 1rem;
+  width: 100%;
+  text-align: center;
+}
+.about__img {
+  width: 100%;
+  max-width: 600px;
+}
 .about__features {
   display: grid;
   gap: 1rem;
   padding: 2rem 0;
 }
-.about__features__figure {
+.about__features--figure {
   padding-bottom: 1rem;
 }
-.about__features__img {
+.about__features--img {
   width: 5rem;
   height: 5rem;
   object-fit: contain;
@@ -265,17 +273,6 @@ input {
 
 .about--cta {
   text-align: left;
-}
-
-.about__figure {
-  padding-bottom: 1rem;
-  width: 100%;
-  text-align: center;
-}
-
-.about__img {
-  width: 100%;
-  max-width: 600px;
 }
 
 .bottom_more-info {
