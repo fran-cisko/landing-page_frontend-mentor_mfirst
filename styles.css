@@ -14,7 +14,7 @@
   --bg-main:hsl(217, 28%, 15%);
   --bg-wave: hsl(218, 28%, 13%);
   --bg-footer:hsl(216, 53%, 9%);
-  --bg-testimonials: hsl(219, 30%, 18%);
+  --bg-testimonials: hsl(221, 25%, 25%);
   /*== Acent ==*/
   --cta-gradient-acent: hsl(176, 68%, 64%);
   --cta-gradient-acent-second:hsl(198, 60%, 50%);
@@ -35,7 +35,7 @@
   --normal-font-size: .875rem;
   /*body copy 14px according to designer's request */
   --small-font-size: .813rem;
-  --smaller-font-size: .75rem;
+  --smaller-font-size: .7rem;
   /*========== Font weight ==========*/
   /* --font-medium: 500;
   --font-semi-bold: 600; */
@@ -285,6 +285,49 @@ input {
 
 .bottom_more-info--arrow {
   vertical-align: middle;
+}
+
+.testimonials {
+  padding-top: 8rem;
+}
+
+.card {
+  width: 100%;
+  max-width: 40rem;
+  margin: 0 auto;
+  background-color: var(--bg-testimonials);
+  border-radius: 5px;
+  box-shadow: 1px 1px 8px -1px #bcc9e7;
+  padding: 1.5rem 1.5rem;
+  margin-top: 2rem;
+}
+.card__copy {
+  font-size: var(--small-font-size);
+  line-height: 1.4;
+}
+.card__profile {
+  display: flex;
+  padding-top: 1rem;
+}
+.card__figure {
+  width: 2rem;
+  height: 2rem;
+}
+.card__img {
+  width: 100%;
+  border-radius: 50%;
+}
+.card__profile--info {
+  flex-direction: column;
+  padding-left: 0.7rem;
+}
+.card__name {
+  font-family: var(--spotlight-font);
+  font-size: var(--small-font-size);
+  letter-spacing: 1px;
+}
+.card__job {
+  font-size: var(--smaller-font-size);
 }
 
 /*# sourceMappingURL=styles.css.map */
