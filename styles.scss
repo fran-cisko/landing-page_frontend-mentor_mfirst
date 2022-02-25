@@ -147,17 +147,17 @@ input {
 }
 
 /*=============== REUSABLE CSS CLASSES ===============*/
-.section {
-  padding: 2rem 0;
+// .section {
+//   padding: 2rem 0;
 
-    &__title {
-    font-size: var(--h2-font-size);
-    color: var(--title-color);
-    text-align: center;
-    text-transform: capitalize;
-    margin-bottom: var(--mb-2);
-    }
-}
+//     &__title {
+//     font-size: var(--h2-font-size);
+//     color: var(--title-color);
+//     text-align: center;
+//     text-transform: capitalize;
+//     margin-bottom: var(--mb-2);
+//     }
+// }
 
 .container{
   max-width: 80rem;
@@ -274,19 +274,32 @@ height: 3.5rem;
 
 
 .about {
-    display:grid;
-    gap: 1rem;
     text-align: center;
     padding-top: 5rem;
     & *{
         outline: 1px solid rgb(61, 204, 61);
     }
+  // &__figure {
+  //     padding-bottom: 1rem;
+  // }
+  // &__img {
+  //     width: 5rem;
+  //     height: 5rem;
+  //     object-fit:contain;
+  // }
+}
+.about__features{
+  display:grid;
+  gap: 1rem;
+  text-align: center;
+  padding: 2rem 0;
+
   &__figure {
-      padding-bottom: 1rem;
-  }
+    padding-bottom: 1rem;
+}
   &__img {
-      width: 5rem;
-      height: 5rem;
-      object-fit:contain;
-  }
+    width: 5rem;
+    height: 5rem;
+    object-fit:contain;
+}
 }

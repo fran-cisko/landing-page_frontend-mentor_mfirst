@@ -141,17 +141,6 @@ input {
 }
 
 /*=============== REUSABLE CSS CLASSES ===============*/
-.section {
-  padding: 2rem 0;
-}
-.section__title {
-  font-size: var(--h2-font-size);
-  color: var(--title-color);
-  text-align: center;
-  text-transform: capitalize;
-  margin-bottom: var(--mb-2);
-}
-
 .container {
   max-width: 80rem;
   padding: 0 2rem;
@@ -258,18 +247,23 @@ input {
 }
 
 .about {
-  display: grid;
-  gap: 1rem;
   text-align: center;
   padding-top: 5rem;
 }
 .about * {
   outline: 1px solid #3dcc3d;
 }
-.about__figure {
+
+.about__features {
+  display: grid;
+  gap: 1rem;
+  text-align: center;
+  padding: 2rem 0;
+}
+.about__features__figure {
   padding-bottom: 1rem;
 }
-.about__img {
+.about__features__img {
   width: 5rem;
   height: 5rem;
   object-fit: contain;
