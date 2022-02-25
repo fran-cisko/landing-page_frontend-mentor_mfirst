@@ -26,18 +26,16 @@
   --body-font: "Open Sans", sans-serif;
   --spotlight-font: "Raleway", sans-serif;
   /* Headings, Call-to-actions, Header Navigation */
-  --p-line-height:1.5rem;
+  --p-line-height:1.6rem;
   /*description especifications*/
   --biggest-font-size: 2.5rem;
   --h1-font-size: 1.4rem;
   --h2-font-size: 1.25rem;
   --h3-font-size: 1rem;
   --normal-font-size: .875rem;
-  /*body copy 14px according to designer's request 
-
+  /*body copy 14px according to designer's request */
   --small-font-size: .813rem;
   --smaller-font-size: .75rem;
-
   /*========== Font weight ==========*/
   /* --font-medium: 500;
   --font-semi-bold: 600; */
@@ -152,7 +150,7 @@ input {
 
 .grid {
   display: grid;
-  gap: var(--gap, 1.5rem);
+  gap: var(--gap, 1rem);
 }
 
 .flex {
@@ -248,16 +246,12 @@ input {
 
 .about {
   text-align: center;
-  padding-top: 5rem;
-}
-.about * {
-  outline: 1px solid #3dcc3d;
+  padding-top: 4rem;
 }
 
 .about__features {
   display: grid;
   gap: 1rem;
-  text-align: center;
   padding: 2rem 0;
 }
 .about__features__figure {
@@ -267,6 +261,33 @@ input {
   width: 5rem;
   height: 5rem;
   object-fit: contain;
+}
+
+.about--cta {
+  text-align: left;
+}
+
+.about__figure {
+  padding-bottom: 1rem;
+  width: 100%;
+  text-align: center;
+}
+
+.about__img {
+  width: 100%;
+  max-width: 600px;
+}
+
+.bottom_more-info {
+  width: fit-content;
+  font-size: var(--small-font-size);
+  color: var(--cta-gradient-acent);
+  border-bottom: 1px solid;
+  line-height: 200%;
+}
+
+.bottom_more-info--arrow {
+  vertical-align: middle;
 }
 
 /*# sourceMappingURL=styles.css.map */
