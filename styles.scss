@@ -127,20 +127,6 @@ video {
   height: auto;
 } */
 
-button,
-input {
-  border: none;
-  font-family: var(--body-font);
-  font-size: var(--normal-font-size);
-}
-
-button {
-  cursor: pointer;
-}
-
-input {
-  outline: none;
-}
 
 .main {
   overflow-x: hidden;
@@ -183,7 +169,7 @@ gap: var(--gap, 1rem);
   padding: 0.75rem 0.75rem;
   width: 15rem;
   background: var(--gradient);
-  border-radius: 1rem;
+  border-radius: 1.25rem;
   color:var(--white);
   place-self:center;
 }
@@ -245,9 +231,9 @@ height: 3.5rem;
   gap:1.25rem;
   text-align: center;
 
-    & *{
-    outline: 1px solid wheat;
-    }
+    // & *{
+    // outline: 1px solid wheat;
+    // }
 
     &__img{
     margin:auto;
@@ -277,6 +263,7 @@ height: 3.5rem;
 .about {
     text-align: center;
     padding-top: 4rem;
+    
     &__figure{
       padding-bottom: 1rem;
       width:100%;
@@ -296,7 +283,7 @@ height: 3.5rem;
       }
       &--img {
         width: 5rem;
-        height: 5rem;
+        height:5rem;
         object-fit:contain;
       }
     }
@@ -330,7 +317,7 @@ line-height:200%;
   box-shadow: 1px 1px 8px -1px hsl(221, 47%, 82%);
   padding:1.5rem 1.5rem;
   margin-top: 2rem;
-
+   
     &__copy{
       font-size: var(--small-font-size);
       line-height:1.4; 
@@ -363,5 +350,51 @@ line-height:200%;
         &__job{
           font-size: var(--smaller-font-size);
         }
-      
+
+    &--quotes{
+          position:relative;
+    }
+    &--quotes::before{
+      content:"";
+      position:absolute;
+      background-image:url("./images/bg-quotes.png");
+      top:-1.75rem;
+      left:0;
+      width:1.75rem;
+      height:1.75rem;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
 }
+
+.suscribe{
+  padding-top:4rem;
+  width:100vw;
+  margin-left: -2rem;
+  background-image: linear-gradient(var(--bg-main) 50%, var(--bg-footer) 50%);
+
+}
+.form{
+  margin-inline: 1rem;
+  max-width:40rem;
+  margin:0 auto;
+  background: var(--bg-testimonials);
+  padding: 2rem 1rem;
+  border-radius: 4px;
+  text-align: center;
+}
+.form__input{
+color: rgb(7, 7, 7);
+padding: 1.1rem 2rem;
+border-radius: 1.25rem;
+border:none;
+}
+.form__btn{
+padding: 1.25rem ;
+border-radius: 1.25rem;
+border:none;
+background: var(--gradient);
+color:inherit;
+}
+
+
