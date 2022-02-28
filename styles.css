@@ -111,6 +111,7 @@ li {
 
 a {
   text-decoration: none;
+  color: var(--white);
 }
 
 /* img,
@@ -220,7 +221,6 @@ video {
   height: 20%;
   background: url("./images/bg-curvy-mobile.svg");
   background-repeat: no-repeat;
-  outline: 1px solid #df80cf;
   background-size: 110% 100%;
   box-shadow: 0 150px 30px 25px #181f2a;
   /* color wave original #181F2B */
@@ -341,21 +341,61 @@ video {
   padding: 2rem 1rem;
   border-radius: 4px;
   text-align: center;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
 }
-
 .form__input {
   color: #070707;
   padding: 1.1rem 2rem;
   border-radius: 1.25rem;
   border: none;
 }
-
 .form__btn {
   padding: 1.25rem;
   border-radius: 1.25rem;
   border: none;
   background: var(--gradient);
   color: inherit;
+}
+
+.footer {
+  background-color: var(--bg-footer);
+  line-height: 1.6;
+}
+.footer__contact {
+  padding-bottom: 4rem;
+}
+.footer__info {
+  display: flex;
+}
+.footer__icon-info {
+  width: 1rem;
+  height: 0.8rem;
+  margin-right: 1rem;
+  margin-top: 4px;
+}
+.footer__links {
+  display: grid;
+  gap: 0.75rem;
+  padding-top: 0.75rem;
+  padding-bottom: 2rem;
+}
+.footer__social-links {
+  padding: 2rem 0;
+  text-align: center;
+}
+.footer__social {
+  width: 25px;
+  height: 25px;
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 0.125rem 0.125rem;
+  margin-left: 0.5rem;
+}
+.footer__attribution {
+  text-align: center;
+  font-size: var(--smaller-font-size);
+  text-decoration: none;
+  padding-top: 5rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
